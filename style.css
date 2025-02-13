@@ -165,3 +165,16 @@ footer
     background-color: rgb(79, 168, 198);
 }
 
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.container {
+  @include make-container();
+}
